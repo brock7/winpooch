@@ -1,0 +1,164 @@
+Elõszó
+
+A legtöbb program felhasználói jogosultságai azzal a szándékkal készültek, hogy minél kevesebb lehetõséget adjanak a terjesztéshez illetve a szoftver megváltoztatásához. A GNU GPL ezzel szemben minél több jogot kíván biztosítani a szabad szoftverek terjesztéséhez és módosításához, hogy a szoftver ingyenes lehessen az összes felhasználója számára. Az Általános Közreadási Feltételek szabályai vonatkoznak a Szabad Szoftver Alapítvány legtöbb szoftverére, illetve minden olyan programra, melynek szerzõje úgy dönt, hogy ezt használja a szerzõi jog megjelölésekor. (A szabad szoftver alapítvány egyes szoftvereire a GNU LGPL vonatkozik - Library GPL.) Bárki használhatja a programjaiban a GPL-t a szerzõi jogi megjegyzésnél.
+
+A szabad szoftver megjelölés nem jelenti azt, hogy a szoftvernek nem lehet ára. A GPL dokumentumok úgy készültek, hogy biztosítsák a szabad szoftverek terjeszthetõségét (pénzért ha úgy tetszik), illetve a forráskód hozzáférhetõséget, hogy bárki szabadon módosíthassa azt, ha akarja mindenképpen tudjon errõl a lehetõségrõl.
+
+A szerzõ jogainak védelmében korlátozásokat kell hozni, melyek megtiltják, hogy bárki megtagadja e jogokat másoktól, vagy ezekrõl való lemondásra kényszerítene valakit. Ezek a korlátozások bizonyos kötelezettségeket jelentenek azok számára akik a terjesztik vagy módosítják a szoftvert.
+
+Ha valaki ilyen programot terjeszt, akár ingyen akár egy bizonyos összeg fejében, a szoftverre vonatkozó minden jogát tovább kell adnia az ügyfeleinek. Biztosítani kell továbbá, hogy mindenki megkapja, vagy lehetõsége legyen hozzájutni a forráskódhoz. Ezenkívül el kell juttatni az ezen szabályokat tartalmazó dokumentumot is, hogy mindenki értesülhessen a jogairól.
+
+A jogvédelem két eszköze: (1) a szoftver szerzõi jogainak biztosítása (2) ezen szabályok alapján jogok biztosítása a másoláshoz, terjesztéshez és/vagy a szoftver módosításához.
+
+Az egyes szerzõk és a magunk védelmében biztosítani akarjuk, hogy mindenki megértse: nincs garancia az ilyen szoftverekre. Ha a szoftvert mások módosították és továbbterjesztették, mindenkinek, aki a módosított változatot kapja, tudnia kell, hogy az nem eredeti. Így a mások által okozott hibáknak nem lehet semmiféle hatása az eredeti szerzõ hírnevére.
+
+Végül, mivel a szabad szoftver létét fenyegetik a szoftverszabadalmak, el szeretnénk kerülni annak veszélyét, hogy a szabad szoftver terjesztõi szabadalmat jegyezhessenek be a szoftverre, így tulajdonukká téve azt. Ennek megelõzéséhez tisztázni kívánjuk: szabadalom szabad szoftverrel kapcsolatban csak mindenki által szabad használatra jegyezhetõ be, vagy egyáltalán nem jegyezhetõ be.
+
+A pontos szabályok és a másolásra, terjesztésre, módosításra vonatkozó feltételek következnek.
+
+GNU GPL
+
+A másolásra, terjesztésre és módosításra vonatkozó feltételek és szabályok
+
+0.
+
+Ezek a jogok vonatkoznak bármely olyan programra vagy munkára, melynek a szerzõi jogi megjegyzésében a jog tulajdonosa a következõ szöveget helyezte el: Terjeszthetõ a GNU GPL-ben foglaltak alapján. A következõkben a Program megjelölés vonatkozik bármely programra, vagy munkára, a Programon alapuló munka pedig magát a Programot, vagy a Programot felhasználó szerzõi joggal védett munkát jelenti, vagyis olyan munkát, mely tartalmazza a Programot, vagy annak egy részletét, módosítottan vagy módosítatlanul és/vagy más nyelvre fordítva. (Ezentúl a fordítás minden egyéb megkötés nélkül beletartozik a módosítás fogalmába.)
+
+A másoláson, terjesztésen és módosításon kívül más tevékenységgel nem foglalkozik ez a dokumentum, azokat hatályon kívülinek tekinti. A Program futtatása nincs korlátozva, illetve a Program kimenetére is csak abban az esetben vonatkozik ez a szabályozás, ha az tartalmazza a Programon alapuló munka egy részletét (attól függetlenül, hogy ez a Program futtatásával jött-e létre). Ez tehát a Program mûködésétõl függ.
+
+1.
+
+A Program forráskódja másolható és terjeszthetõ módosítás nélkül bármely adathordozón, feltéve, hogy minden egyes példányon pontosan szerepel a megfelelõ szerzõi jogi megjegyzés, illetve a garanciavállalás elutasítása. Érintetlenül kell hagyni minden erre a szabályozásra és a garancia teljes hiányára utaló szöveget, és ezt a dokumentumot is el kell juttatni mindazokhoz akik a Programot kapják.
+
+Kérhetõ pénz az adatok fizikai továbbítása fejében, illetve díjazás fejében lehet garanciás támogatást adni a Programhoz.
+
+2.
+
+A Program, vagy egy darabja módosítható, mely így az egy a Programon alapuló munkát alkot, a módosítás ezután tovább terjeszthetõ az 1. részben adott feltételek szerint, ha az alábbi feltételek is teljesülnek:
+
+    a) A módosított fájlokat el kell látni olyan megjegyzéssel, mely feltünteti a módosítást végzõ nevét és a módosítások dátumát.
+
+    b) Minden olyan munkát vagy programot, mely részben vagy egészben tartalmazza a Programot vagy a Programon alapul, olyan szabályokkal kell kiadni, hogy annak használati joga harmadik személy részére ingyenesen hozzáférhetõ legyen, ezen dokumentumban található szabályok alapján.
+
+    c) Ha a módosított Program interaktív bemenetet használ, akkor azt úgy kell elkészíteni, hogy a megszokott módon történõ indításkor megjelenítsen egy üzenetet a megfelelõ szerzõi jogi megjegyzéssel és a garancia hiányára utaló közléssel (vagy éppen azzal az információval, hogy minként juthat valaki garanciához), illetve azzal az információval, hogy bárki terjesztheti a Programot eme feltételek alapján. Ezenkívül utalást kell tenni rá, hogy miként olvashatja el a felhasználó ezt a dokumentumot. (Kivétel: ha a Program interaktív ugyan, de nem jelenít meg hasonló üzenetet, akkor a Programon alapuló munkának sem kell ezt tennie.)
+
+Ezek a feltételek a módosított munkára mint egészre vonatkoznak. Ha a munka egy azonosítható részei nem a Programon alapulnak, függetlenként elkülönülten azonosíthatók, akkor ez a szabályozás nem vonatkozik ezekre a részekre, ha azok külön munkaként vannak terjesztve. Viszont, ha ugyanez a rész az egész részeként kerül terjesztésre, és az egész a Programon alapuló munka, akkor az egész terjesztése csak ezen dokumentum alapján lehetséges, mely ebben az esetben a jogokat minden egyes felhasználó számára kiterjeszti az egészre tekintet nélkül arra, hogy mely részt ki írta.
+
+Ezen szövegrésznek nem az a célja, hogy a mások jogait elvegye vagy korlátozza a kizárólag saját maga által írt munkákra. A cél, hogy a jogok gyakorlása szabályozva legyen a Programon alapuló illetve a gyûjteményes munkák terjesztése esetében is.
+
+Ezenkívül más munkák, melyek nem a Programon alapulnak, a Programmal (vagy a Programon alapuló munkával) közös adathordozón vagy adattárolón szereplése nem jelenti ezen szabályok érvényességét azokra is.
+
+3.
+
+A program (vagy a programon alapuló munka a 2. szakasz alapján) másolható és terjeszthetõ tárgykódú vagy végrehajtható kódú formájában az 1. és 2. szakaszban foglaltak szerint, amennyiben az alábbi feltételek is teljesülnek:
+
+    a) A teljes, gép által értelmezhetõ forráskód kíséri az anyagot, melynek terjesztése az 1. és 2. szakaszban foglaltak szerint történik, szoftverterjesztésre használt hordozón; vagy
+
+    b) Egy legalább három évre szóló írásos ajánlat kíséri az anyagot, mely szerint bármely külsõ személynek rendelkezésre áll a teljes gép által értelmezhetõ forráskód, a fizikai továbbítást fedezõ összegnél nem nagyobb díjért az 1. és 2. szakaszban foglaltak szerint szoftverterjesztésre használt adathordozón; vagy
+
+    c) Olyan tájékoztatás kíséri az anyagot, mely tartalmazza az írásos ajánlat szövegét a forráskód biztosítására. (Ez az alternatíva csak nem kereskedelmi terjesztés esetén alkalmazható, abban az esetben, ha a terjesztõ a Programhoz a tárgykódú vagy forráskódú formájában jutott hozzá az ajánlattal együtt a b. cikkelynek megfelelõen.)
+
+Egy munka forráskódja a munkának azt a formáját jelenti, melyben a módosításokat szokás végezni. Egy végrehajtható program esetében a teljes forráskód jelenti a modulok forráskódját, a kapcsolódó felületkezelõ definíciós fájlokat, és a fordítást vezérlõ parancsfájlokat. Egy speciális kivételként a forráskódnak nem kell tartalmaznia az operációs rendszer fõbb részeit (kernel fordítóprogram stb.), melyen a végrehajtható kód fut, hacsak nem tartozik ehhez maga a program is.
+
+Ha a végrehajtható program vagy tárgykód terjesztése a forráskód hozzáférését egy megadott helyen biztosító ajánlattal történik, ez az ajánlat egyenértékû a forráskód terjesztésével, még akkor is, ha másoknak így nem kell a forrást lemásolniuk a tárgykóddal együtt.
+
+4.
+
+A Programot csak az ebben a dokumentumban leírtaknak megfelelõen lehet lemásolni, terjeszteni, módosítani, rá jogokat bejegyezni. Az egyéb módon való másolás, módosítás, terjesztés, jogok bejegyzése semmissé teszi a dokumentumban közzétett jogosultságokat. Akik azonban jogaikat ennek a szerzõi jogi szabályozásnak a keretei között kapták, azok joga mindaddig megmarad, amíg teljesen megfelelnek a leírtaknak.
+
+5.
+
+Nem kell elfogadni ezt a szabályozást, mivel aláírni sem kell. Ezenkívül viszont semmi más nem adhat jogokat a Program továbbterjesztésére és módosítására. Ezeket a cselekedeteket a Törvény bünteti, ha nem ennek a szerzõi jogi szabályozásnak a keretei között történnek. Mindezek miatt a Program (vagy a Programon alapuló munka) terjesztése vagy módosítása ezen dokumentum szabályainak elfogadását jelenti.
+
+6.
+
+Minden alkalommal, amikor a Program (vagy az azon alapuló munka) továbbadása történik, a Program vevõje automatikusan hozzájut a Program eredeti tulajdonosának szerzõi jogait tartalmazó dokumentumhoz, mely biztosítja a Program másolását és terjesztését eme szabályok szerint. Nem lehet semmi módon további korlátozásokat hozni a vevõ számára ezen szabályok betartása céljából. Más szavakkal: a Program továbbadója nem felelõs más személyekkel betartatni ezeket a szabályokat.
+
+7.
+
+Ha bírósági határozat vagy más szabadalmi kötöttségek miatt olyan feltételek állnak elõ, melyek ellentétesek e szabályozással, ezek nem mentik fel a terjesztõt a feltételek figyelembevétele alól. Ha a terjesztés nem lehetséges ezen szabályozás szerint, akkor egyáltalán nem lehetséges. Például, ha egy szabadalmi szerzõdés nem engedi meg egy program tiszteletdíj nélküli terjesztését, akkor az egyetlen módja, hogy eleget tegyen valaki mindkét szabályozásnak az, hogy eláll a továbbfejlesztett program terjesztésétõl.
+
+Ha ennek a szakasznak bármely része nem érvényesül, vagy nem érvényesíthetõ valamely körülmény folytán, akkor a szakaszt kell mérlegelni, egyéb esetekben a szakasz mint egész alkalmazandó.
+
+Ennek a szakasznak nem az a célja, hogy a szabadalmak vagy egyéb hasonló jogok elutasítására bírjon bárkit is. Mindössze meg szeretné védeni a szabad szoftver terjesztés rendszerének egységét, melyet a szabad közreadást szabályozó feltételrendszerek teremtenek meg. Sok ember nagylelkû közremûködése folytán igen nagyszámú és változatos szoftver terjesztése történik ezen a módon, mely nagyban függ ennek a feltétel rendszernek állandó betartásán. Minden esetben a szerzõ/adományozó dönti el, hogy mûvét mely rendszer szerint teszi közzé. Ezt a döntést a jogok felhasználója nem befolyásolhatja.
+
+Ez a szakasz pontosan szeretné tisztázni a szabályozás hátralevõ részének lehetséges következményeit.
+
+8.
+
+Ha a Program terjesztése és/vagy használata egyes országokban nem lehetséges szabadalmak vagy szerzõi jogokkal védett kapcsolódási felületek miatt, akkor a Program szerzõi jogainak eredeti tulajdonosa, aki a Programot ezen szabályozás alapján adja közre, egy földrajzi megkötést adhat a terjesztésre, és egyes országokat kizárhat. Ekkor a terjesztés csak azokban az országokban lehetséges, amelyek nem lettek ilyen módon kizárva. Ebben az esetben ennek a szabályozásnak kell tartalmazni az ilyen megkötéseket is is.
+
+9.
+
+A Szabad Szoftver Alapítvány idõnként a dokumentum felülvizsgált illetve újabb változatait adja ki. Ezek az újabb dokumentumok az elõzõek szellemében készülnek, de részletekben különböznek, hogy új problémákat kezelhessenek.
+
+A dokumentum minden változata egy meghatározott verziószámmal ellátva jelenik meg. Ha a program szerzõi jogi megjegyzésében egy bizonyos vagy annál újabb verzió van megjelölve, akkor lehetõség van akár a megjelölt, vagy a Szabad Szoftver Alapítvány által kiadott késõbbi verzióban leírt feltételek követésére. Ha nincs ilyen megjelölt verzió, akkor a Szabad Szoftver Alapítvány által valaha kibocsátott bármelyik dokumentum alkalmazására lehetõség van.
+
+10.
+
+A Programot más szabad szoftverbe, melynek szerzõi jogi szabályozása különbözik a GPL-tõl, akkor lehet beépíteni, ha a szerzõtõl erre engedélyt szereztünk. Abban az esetben, ha a program szerzõi jogainak tulajdonosa a Szabad Szoftver Alapítvány, akkor a Szabad Szoftver Alapítvány címére kell írni. Az alapítvány egyes esetekben ezt engedélyezi. A döntés a következõ két cél szem elõtt tartásával fog megtörténni: a Programon alapuló munkák szabadok maradjanak; valamint segítse elõ a szoftver újrafelhasználását és megosztását.
+
+NINCS GARANCIAVÁLLALÁS
+
+11.
+
+Mivel a program használati joga díjmentes, a programhoz nem jár garancia az ide vonatkozó jogszabálynak megfelelõen. Amennyiben a szerzõi jogok tulajdonosai írásban másként nem nyilatkoznak, a program úgy ahogy van kerül kiadásra mindenféle garanciavállalás nélkül. A programmal kapcsolatban nincs sem származtatott, sem egyéb garanciavállalás, beleértve de nem kizárólagosan a forgalomba hozhatóságra vagy alkalmazhatóságra vonatkozó garanciákat. A program minõségébõl és mûködésébõl fakadó összes kockázat a felhasználót terheli. Ha a program hibásan mûködik, a felhasználónak magának kell vállalnia a javításhoz szükséges minden költséget.
+
+12.
+
+Amennyiben a hatályos jogszabályok, vagy a szerzõi jogok tulajdonosai írásos megállapodásban másként nem rendelkeznek, sem a program szerzõje sem mások, akik módosították és/vagy terjesztették a programot a fentieknek megfelelõen, nem tehetõk felelõssé károkért melyek lehetnek véletlenek, vagy meghatározott körülmények miatt történtek (beleértve de nem kizárólagosan az adatvesztést és a helytelen adatfeldolgozást, valamint a más programokkal való hibás együttmûködést), akkor sem, ha ezen felek tudatában voltak ilyen károk keletkezésének lehetõségének.}
+
+Feltételek és szabályok vége
+
+Hogyan alkalmazhatók ezek a szabályok egy új programra?
+
+Ha valaki egy új programot készít és szeretné hogy az a többi ember számára a lehetõ leginkább hasznos legyen, annak az a legjobb módja, hogy Szabad Szoftverré teszi azt, megengedve bárki számára a szabad másolást és módosítást ezen szabályok alapján.
+
+Ehhez a következõ megjegyzést kell csatolni a programhoz. A legbiztosabb ezt minden egyes forrásfájl elejére beírni, így közölve leghatásosabban a garancia visszautasítását. Minden fájl ezenkívül kell, hogy tartalmazzon egy copyright sort és egy utalást arra helyre, ahol a teljes szöveg található.
+
+   Egy sor mely megadja a program nevét, és leírja, hogy mit csinál.
+   Copyright (C) 20yy a szerzõ neve
+
+   Ez egy szabad szoftver; terjeszthetõ illetve módosítható a GNU
+   Általános Közreadási Feltételek dokumentumában leírtak szerint -- 2.
+   vagy késõbbi verzió --, melyet a Szabad Szoftver Alapítvány ad ki.
+
+   Ez a program abban a reményben kerül közreadásra, hogy hasznos lesz,
+   de minden egyéb GARANCIA NÉLKÜL, az eladhatóságra vagy valamely célra
+   való alkalmazhatóságra való származtatott garanciát is beleértve.
+   További részletekért lásd a GNU Általános Közreadási Feltételek
+   dokumentumát.
+
+   A programmal együtt kellett, hogy érkezzen egy példány a GNU    
+   Általános Közreadási Feltételek dokumentumából is. Ha mégsem akkor
+   ezt a Szabad Szoftver Alapítványnak küldött levélben jelezni kell.
+
+   A szabad szoftver alapítvány címe:
+   Free Software Foundation, Inc., 
+   59 Temple Place, Suite 330, 
+   Boston, MA  02111-1307  USA.
+
+A programhoz csatolni kell azt is, hogy miként lehet kapcsolatba lépni a szerzõvel, elektronikus vagy hagyományos levél küldésével.
+
+Ha a program interaktív, a következõhöz hasonló üzenettel lehet ezt megtenni a program indulásakor:
+
+
+   Gnomovision version 69, Copyright (C) 20yy a szerzõ neve
+   A Gnomovision programhoz SEMMIFÉLE GARANCIA NEM JÁR; A részletes
+   tájékoztatáshoz ezt kell begépelni: show w.
+   Ez egy szabad szoftver; bizonyos feltételek mellett terjeszthetõ
+   illetve módosítható.
+   A részletes tájékoztatáshoz ezt kell begépelni: show c.
+
+
+A show w és show c képzeletbeli parancsok, és a GNU Általános Közreadási Feltételek megfelelõ szakaszát kell megjeleníteniük. Természetesen a valódi parancsok lehetnek a show w és a show c-tõl különbözõek is, lehetnek akár egérkattintások vagy menüpontok is a programnak megfelelõen.
+
+Ha szükséges, meg kell szerezni (programozó esetében) a munkáltatótól vagy iskolától a program szerzõi jogairól való lemondás igazolását. Erre itt egy példa:
+
+ Az Adócsaló BT ezennel lemond minden szerzõi jogi érdekeltségérõl
+ a Gnomovision programmal kapcsolatban, melyet Hekker Jani írt.
+
+ Aláírás: Maffy Jocó, 1989. április 1.
+ Maffy Jocó, alelnök
+
+A General Public License általános közreadási feltételek dokumentuma nem engedi meg, hogy Szabad Szoftver része legyen szabadalommal védett programnak. Ha a program egy eljáráskönyvtár, akkor inkább a más programokkal való összefûzését célszerû megengedni. Ha ez a cél, akkor a GNU Library General Public License dokumentumot lehet alkalmazni, mely ilyen eljáráskönyvtárak közreadását szabályozza.

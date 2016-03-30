@@ -1,0 +1,345 @@
+***************
+*** 248,263 ****
+      case SCANNER_BITDEFENDER:
+        bResult = _Scanner_BitDef_Configure (&g_data.bitdefconf)  ;
+        break ;
+      case SCANNER_NONE:
+        bResult = TRUE ;
+        break ;
+      }
+  
+-   g_data.nScanner = bResult ? nScanner :  SCANNER_NONE ; 
+  
+    // tell the spy server that he should scan this file
+    SpySrv_SetScannerExePath (Scanner_GetScannerExe()) ;
+  
+    return bResult ;
+  }
+  
+--- 292,311 ----
+      case SCANNER_BITDEFENDER:
+        bResult = _Scanner_BitDef_Configure (&g_data.bitdefconf)  ;
+        break ;
++     case SCANNER_LIBCLAMAV:
++       bResult = _Scanner_LibClamav_Configure (&g_data.libclamavconf)  ;
++       break ;
+      case SCANNER_NONE:
+        bResult = TRUE ;
+        break ;
+      }
+  
++   g_data.nScanner = bResult ? nScanner :  SCANNER_NONE ;
+  
+    // tell the spy server that he should scan this file
+    SpySrv_SetScannerExePath (Scanner_GetScannerExe()) ;
+  
++ 
+    return bResult ;
+  }
+  
+***************
+*** 342,353 ****
+      {
+      case SCANNER_CLAMWIN:
+        return _Scanner_ClamWin_ScanFile (&g_data.clamwinconf, szPath, szOutput, nOutputMax) ;
+-       
+      case SCANNER_KASPERSKY_WS:
+        return _Scanner_KavWs_ScanFile (&g_data.kavwsconf, szPath, szOutput, nOutputMax) ;
+  
+      case SCANNER_BITDEFENDER:
+        return _Scanner_BitDef_ScanFile (&g_data.bitdefconf, szPath, szOutput, nOutputMax) ;
+      }
+  
+    return SCANNER_NONE ;
+--- 398,413 ----
+      {
+      case SCANNER_CLAMWIN:
+        return _Scanner_ClamWin_ScanFile (&g_data.clamwinconf, szPath, szOutput, nOutputMax) ;
++ 
+      case SCANNER_KASPERSKY_WS:
+        return _Scanner_KavWs_ScanFile (&g_data.kavwsconf, szPath, szOutput, nOutputMax) ;
+  
+      case SCANNER_BITDEFENDER:
+        return _Scanner_BitDef_ScanFile (&g_data.bitdefconf, szPath, szOutput, nOutputMax) ;
++ 
++     case SCANNER_LIBCLAMAV:
++       return _Scanner_LibClamav_ScanFile (&g_data.libclamavconf, szPath, szOutput, nOutputMax) ;
++ 
+      }
+  
+    return SCANNER_NONE ;
+***************
+*** 573,579 ****
+  
+  BOOL _Scanner_Run (LPTSTR szCmdLine, LPTSTR szDirectory,
+  		   DWORD*pdwExitCode,
+- 		   LPTSTR szOutput, UINT nOutputMax) 
+  {
+    SECURITY_ATTRIBUTES sa = {0};
+    STARTUPINFO         si = {0};
+--- 633,639 ----
+  
+  BOOL _Scanner_Run (LPTSTR szCmdLine, LPTSTR szDirectory,
+  		   DWORD*pdwExitCode,
++ 		   LPTSTR szOutput, UINT nOutputMax)
+  {
+    SECURITY_ATTRIBUTES sa = {0};
+    STARTUPINFO         si = {0};
+***************
+*** 588,636 ****
+    TRACE_INFO (TEXT("CmdLine = %s\n"), szCmdLine) ;
+  
+    sa.nLength		= sizeof(sa) ;
+-   sa.bInheritHandle	= TRUE ; 
+    sa.lpSecurityDescriptor = NULL ;
+  
+    if( ! CreatePipe (&hPipeOutputRead, &hPipeOutputWrite, &sa, 0) )
+      TRACE_WARNING (TEXT("CreatePipe failed (error=%d)\n"), GetLastError()) ;
+-   
+    si.cb		= sizeof(si);
+    si.dwFlags	= STARTF_USESHOWWINDOW | STARTF_USESTDHANDLES;
+    si.wShowWindow= SW_HIDE;
+    si.hStdInput	= GetStdHandle (STD_INPUT_HANDLE) ;
+    si.hStdOutput	= hPipeOutputWrite ;
+    si.hStdError	= hPipeOutputWrite ;//GetStdHandle (STD_ERROR_HANDLE) ;
+-   
+-   if( ! CreateProcess (NULL, szCmdLine, NULL, NULL, TRUE, 0, 
+  		       NULL, szDirectory, &si, &pi) ) {
+      TRACE_ERROR (TEXT("Failed to run scanner\n")) ;
+      CloseHandle (hPipeOutputWrite);
+      CloseHandle (hPipeOutputRead);
+      return FALSE ;
+    }
+-   
+    CloseHandle (hPipeOutputWrite);
+-  
+    // wait for process end
+    WaitForSingleObject (pi.hProcess, 30000) ;
+  
+    GetExitCodeProcess (pi.hProcess, pdwExitCode) ;
+  
+-  
+    while( nOutputPos<nOutputMax-1 )
+      {
+        UINT i ;
+        char szBuffer[64] ;
+-       
+        // try to read pipe
+-       bSuccess = ReadFile (hPipeOutputRead, 
+- 			   szBuffer, 
+  			   64,
+- 			   &dwBytesRead, NULL) ;  
+-       
+        // failed to read ?
+        if( !bSuccess || !dwBytesRead ) break ;
+-       
+        for( i=0 ; i<dwBytesRead ; i++ )
+  	{
+  	  switch( szBuffer[i] )
+--- 648,696 ----
+    TRACE_INFO (TEXT("CmdLine = %s\n"), szCmdLine) ;
+  
+    sa.nLength		= sizeof(sa) ;
++   sa.bInheritHandle	= TRUE ;
+    sa.lpSecurityDescriptor = NULL ;
+  
+    if( ! CreatePipe (&hPipeOutputRead, &hPipeOutputWrite, &sa, 0) )
+      TRACE_WARNING (TEXT("CreatePipe failed (error=%d)\n"), GetLastError()) ;
++ 
+    si.cb		= sizeof(si);
+    si.dwFlags	= STARTF_USESHOWWINDOW | STARTF_USESTDHANDLES;
+    si.wShowWindow= SW_HIDE;
+    si.hStdInput	= GetStdHandle (STD_INPUT_HANDLE) ;
+    si.hStdOutput	= hPipeOutputWrite ;
+    si.hStdError	= hPipeOutputWrite ;//GetStdHandle (STD_ERROR_HANDLE) ;
++ 
++   if( ! CreateProcess (NULL, szCmdLine, NULL, NULL, TRUE, 0,
+  		       NULL, szDirectory, &si, &pi) ) {
+      TRACE_ERROR (TEXT("Failed to run scanner\n")) ;
+      CloseHandle (hPipeOutputWrite);
+      CloseHandle (hPipeOutputRead);
+      return FALSE ;
+    }
++ 
+    CloseHandle (hPipeOutputWrite);
++ 
+    // wait for process end
+    WaitForSingleObject (pi.hProcess, 30000) ;
+  
+    GetExitCodeProcess (pi.hProcess, pdwExitCode) ;
+  
++ 
+    while( nOutputPos<nOutputMax-1 )
+      {
+        UINT i ;
+        char szBuffer[64] ;
++ 
+        // try to read pipe
++       bSuccess = ReadFile (hPipeOutputRead,
++ 			   szBuffer,
+  			   64,
++ 			   &dwBytesRead, NULL) ;
++ 
+        // failed to read ?
+        if( !bSuccess || !dwBytesRead ) break ;
++ 
+        for( i=0 ; i<dwBytesRead ; i++ )
+  	{
+  	  switch( szBuffer[i] )
+***************
+*** 644,659 ****
+  	    default:
+  	      szOutput[nOutputPos++] = szBuffer[i] ;
+  	    }
+- 	  
+  	  if( nOutputPos>=nOutputMax-1 ) break ;
+  	}
+      }
+  
+    szOutput[nOutputPos] = 0 ;
+-       
+-   
+    TRACE_INFO (TEXT("Scan result = %u\n"), *pdwExitCode) ;
+-   
+    CloseHandle (hPipeOutputRead);
+    CloseHandle (pi.hThread) ;
+    CloseHandle (pi.hProcess) ;
+--- 704,719 ----
+  	    default:
+  	      szOutput[nOutputPos++] = szBuffer[i] ;
+  	    }
++ 
+  	  if( nOutputPos>=nOutputMax-1 ) break ;
+  	}
+      }
+  
+    szOutput[nOutputPos] = 0 ;
++ 
++ 
+    TRACE_INFO (TEXT("Scan result = %u\n"), *pdwExitCode) ;
++ 
+    CloseHandle (hPipeOutputRead);
+    CloseHandle (pi.hThread) ;
+    CloseHandle (pi.hProcess) ;
+***************
+*** 667,681 ****
+  /******************************************************************/
+  
+  UINT _Scanner_ClamWin_ScanFile (CLAMWINCONF * pConf, LPCTSTR szFile,
+- 				LPTSTR szOutput, UINT nOutputMax) 
+  {
+    TCHAR		szCmdLine[1024] ;
+    DWORD		dwExitCode ;
+    BOOL		bSuccess ;
+-   
+-   wsprintf (szCmdLine, TEXT("\"%s\" -d \"%s\" \"%s\""), 
+  	    pConf->szScanner, pConf->szDatabase, szFile) ;
+-   
+    bSuccess = _Scanner_Run (szCmdLine, NULL,
+  			   &dwExitCode,
+  			   szOutput, nOutputMax) ;
+--- 727,741 ----
+  /******************************************************************/
+  
+  UINT _Scanner_ClamWin_ScanFile (CLAMWINCONF * pConf, LPCTSTR szFile,
++ 				LPTSTR szOutput, UINT nOutputMax)
+  {
+    TCHAR		szCmdLine[1024] ;
+    DWORD		dwExitCode ;
+    BOOL		bSuccess ;
++ 
++   wsprintf (szCmdLine, TEXT("\"%s\" -d \"%s\" \"%s\""),
+  	    pConf->szScanner, pConf->szDatabase, szFile) ;
++ 
+    bSuccess = _Scanner_Run (szCmdLine, NULL,
+  			   &dwExitCode,
+  			   szOutput, nOutputMax) ;
+***************
+*** 743,749 ****
+  /******************************************************************/
+  
+  UINT _Scanner_KavWs_ScanFile (KAVWSCONF * pConf, LPCTSTR szFile,
+- 			      LPTSTR szOutput, UINT nOutputMax) 
+  {
+    TCHAR		szCmdLine[1024] ;
+    TCHAR		szTmpFile[MAX_PATH] ;
+--- 803,809 ----
+  /******************************************************************/
+  
+  UINT _Scanner_KavWs_ScanFile (KAVWSCONF * pConf, LPCTSTR szFile,
++ 			      LPTSTR szOutput, UINT nOutputMax)
+  {
+    TCHAR		szCmdLine[1024] ;
+    TCHAR		szTmpFile[MAX_PATH] ;
+***************
+*** 754,771 ****
+  
+    GetTempPath (MAX_PATH, szTmpDir) ;
+    GetTempFileName (szTmpDir, PathFindFileName(szFile), 0, szTmpFile) ;
+-   
+-   wsprintf (szCmdLine, TEXT("\"%s\" scan \"%s\" /w:\"%s\""), 
+  	    pConf->szScanner, szFile, szTmpFile) ;
+-   
+    bSuccess = _Scanner_Run (szCmdLine, NULL,
+  			   &dwExitCode,
+  			   szOutput, nOutputMax) ;
+  
+    if( ! bSuccess ) return SCAN_FAILED ;
+-   
+    fp = _tfopen(szTmpFile, TEXT("rt")) ;
+-   
+    if( fp!=NULL )
+      {
+        TCHAR szLine[128] ;
+--- 814,831 ----
+  
+    GetTempPath (MAX_PATH, szTmpDir) ;
+    GetTempFileName (szTmpDir, PathFindFileName(szFile), 0, szTmpFile) ;
++ 
++   wsprintf (szCmdLine, TEXT("\"%s\" scan \"%s\" /w:\"%s\""),
+  	    pConf->szScanner, szFile, szTmpFile) ;
++ 
+    bSuccess = _Scanner_Run (szCmdLine, NULL,
+  			   &dwExitCode,
+  			   szOutput, nOutputMax) ;
+  
+    if( ! bSuccess ) return SCAN_FAILED ;
++ 
+    fp = _tfopen(szTmpFile, TEXT("rt")) ;
++ 
+    if( fp!=NULL )
+      {
+        TCHAR szLine[128] ;
+***************
+*** 820,834 ****
+  /******************************************************************/
+  
+  UINT _Scanner_BitDef_ScanFile (BITDEFCONF * pConf, LPCTSTR szFile,
+- 			       LPTSTR szOutput, UINT nOutputMax) 
+  {
+    TCHAR		szCmdLine[1024] ;
+    DWORD		dwExitCode ;
+    BOOL		bSuccess ;
+-   
+-   wsprintf (szCmdLine, TEXT("\"%s\" \"%s\" /files"), 
+  	    pConf->szScanner, szFile) ;
+-   
+    bSuccess = _Scanner_Run (szCmdLine, pConf->szFolder,
+  			   &dwExitCode,
+  			   szOutput, nOutputMax) ;
+--- 880,894 ----
+  /******************************************************************/
+  
+  UINT _Scanner_BitDef_ScanFile (BITDEFCONF * pConf, LPCTSTR szFile,
++ 			       LPTSTR szOutput, UINT nOutputMax)
+  {
+    TCHAR		szCmdLine[1024] ;
+    DWORD		dwExitCode ;
+    BOOL		bSuccess ;
++ 
++   wsprintf (szCmdLine, TEXT("\"%s\" \"%s\" /files"),
+  	    pConf->szScanner, szFile) ;
++ 
+    bSuccess = _Scanner_Run (szCmdLine, pConf->szFolder,
+  			   &dwExitCode,
+  			   szOutput, nOutputMax) ;

@@ -1,0 +1,108 @@
+SPLOŠNO DOVOLJENJE GNU
+Razlièica št. 2, junij 1991
+Pravice razširjanja © 1989, 1991 Free Software Foundation, Temple Place - Suite 330, Boston, MA 02111-1307, USA. Vsakdo sme razmnoževati in razširjati dobesedne kopije tega licenènega dokumenta, ni pa ga dovoljeno spreminjati.
+
+PREDGOVOR
+
+Licenène pogodbe veèine programja so zasnovane tako, da vam prepreèujejo njegovo svobodno razdeljevanje in spreminjanje. Za razliko od teh vam namerava Splošno dovoljenje GNU (angl. GNU General Public License, GPL) zajamèiti svobodo pri razdeljevanju in spreminjanju prostega programja ter s tem zagotoviti, da ostane programje prosto za vse njegove uporabnike. Ta GPL se nanaša na veèino programske opreme ustanove Free Software Foundation in na vse druge programe, katerih avtorji so se zavezali k njeni uporabi. (Nekatero drugo programje ustanove Free Software Foundation je namesto tega pokrito s Splošnim dovoljenjem GNU za knjižnice, angl. GNU Library General Public License.) Uporabite jo lahko tudi za vaše programe.
+
+Ko govorimo o prostem programju, imamo s tem v mislih svobodo, ne cene. Naša splošna dovoljenja GNU vam zagotavljajo, da imate pravico razširjati kopije prostega programja (in zaraèunavati za to storitev, èe tako želite); da dobite izvorno kodo ali jo lahko dobite, èe tako želite; da lahko spreminjate programje ali uporabljate njegove dele v novih prostih programih; in da veste, da lahko poènete vse te stvari.
+
+Zaradi zavarovanja vaših pravic moramo uvesti omejitve, ki prepovedujejo vsakomur, da bi vam te pravice kratil ali od vas zahteval predajo teh pravic. Te omejitve se preslikajo v doloèene odgovornosti za vas, èe razširjate kopije programja ali ga spreminjate.
+
+Na primer, èe razširjate kopije takega programa, bodisi zastonj ali za plaèilo, morate dati prejemnikom vse pravice, ki jih imate vi. Preprièati se morate, da bodo tudi oni prejeli ali imeli dostop do izvorne kode. In morate jim pokazati te pogoje (pravzaprav izvirnik, opomba prevajalca), da bodo poznali svoje pravice.
+
+Vaše pravice varujemo z dvema korakoma: (1) s pravno zašèito programja in (2) ponujamo vam to licenco, ki vam daje pravno dovoljenje za razmnoževanje, razširjanje in/ali spreminjanje programja.
+
+Zaradi zašèite vsakega avtorja in zaradi naše zašèite želimo zagotoviti, da vsakdo razume, da za to prosto programje ni nobenega jamstva. Èe je programje spremenil nekdo drug in ga posredoval naprej, želimo, da njegovi prejemniki vedo, da to, kar imajo, ni izvirnik, zato da se problemi, ki jih povzroèijo drugi, ne bodo odražali na ugledu izvornega avtorja.
+
+Konèno, vsakemu prostemu programu nenehno grozijo programski patenti. Želimo se izogniti nevarnosti, da bi razširjevalci prostega programa posamièno dobivali patentne licence in s tem naredili program lastniški (angl. proprietary). Za prepreèitev tega jasno zahtevamo, da mora biti vsak patent licenciran tako, da ga lahko vsakdo prosto uporablja, ali pa sploh ne sme biti licenciran.
+
+Sledijo natanène doloèitve in pogoji za razmnoževanje, razširjanje in spreminjanje.
+
+
+SPLOŠNO DOVOLJENJE GNU
+DOLOÈITVE IN POGOJI ZA RAZMNOŽEVANJE, RAZŠIRJANJE IN SPREMINJANJE
+
+0.
+    Licenca se nanaša na vsak program ali drugo delo, ki vsebuje obvestilo lastnika avtorskih pravic (angl. copyright holder) z izjavo, da se lahko distribuira pod pogoji Splošnega dovoljenja GNU (angl. General Public License). ,,Program`` se v nadaljevanju nanaša na vsak tak program ali delo, in ,,delo, ki temelji na programu`` pomeni bodisi program ali pa katerokoli izvedeno delo po zakonu o avtorskih pravicah (angl. copyright law): se pravi delo, ki vsebuje program ali njegov del, bodisi dobesedno ali s spremembami in/ali prevedeno v drug jezik. (Tukaj in povsod v nadaljevanju je prevod vkljuèen brez omejitev v pojem ,,spremembe``.) Vsaka licenca je naslovljena na ,,vas``.
+
+    Ta licenca ne pokriva nobenih drugih aktivnosti razen razmnoževanja, razširjanja in sprememb; ostale so izven njenega dometa. Dejanje poganjanja programa ni omejeno in izhod programa je zajet le, èe njegova vsebina sestavlja delo, iz katerega je izpeljan program (ne glede na to, da je bil narejen s poganjanjem programa). Ali je to res ali ne, je odvisno od tega, kaj poène program.
+
+1.
+    Razmnožujete in razširjate lahko dobesedne izvode izvorne kode programa v enaki obliki, kot jo dobite, preko kateregakoli medija, èe le na vsakem izvodu razloèno in primerno objavite obvestilo o pravicah razširjanja in zanikanje jamstva; vsa obvestila, ki se nanašajo na to licenco in odsotnost vsakršnega jamstva pustite nedotaknjena; in daste vsem drugim prejemnikom programa poleg programa še izvod te licence.
+
+    Za fizièno dejanje prenosa kopije lahko zaraèunavate in po vaši presoji lahko ponudite garancijsko zašèito v zameno za plaèilo.
+
+2.
+    Spreminjati smete vaš izvod ali izvode programa ali katerikoli njegov del, in tako narediti delo, ki temelji na programu, ter razmnoževati in razširjati takšne spremembe ali dela pod pogoji zgornjega razdelka 1, èe zadostite tudi vsem naslednjim pogojem:
+
+    a.
+        Zagotoviti morate, da spremenjene datoteke nosijo vidna obvestila o tem, da ste jih spremenili in datum vsake spremembe.
+
+    b.
+        Zagotoviti morate, da je vsako delo, ki ga razširjate ali izdajate in ki v celoti ali deloma vsebuje program ali katerikoli njegov del ali pa je iz njega izpeljano, licencirano pod pogoji te licence kot celota brez plaèila katerikoli tretji osebi.
+
+    c.
+        Èe spremenjeni program ob zagonu navadno bere ukaze interaktivno, morate zagotoviti, da se ob najbolj obièajnem zagonu za takšno interaktivno uporabo izpiše ali prikaže najava, ki vkljuèuje primerno sporoèilo o pravicah razširjanja in sporoèilo, da jamstvo ni zagotovljeno (ali pa sporoèilo, da ponujate jamstvo) in da lahko uporabniki razširjajo program pod temi pogoji, in pove uporabniku, kako pogledati izvod te licence. (Izjema: èe je sam program interaktiven, a navadno ne izpiše takšne najave, tudi za vaše delo, ki temelji na programu, ni nujno, da jo.) 
+
+    Te zahteve se nanašajo na spremenjeno delo kot celoto. Èe kosi tega dela, ki jih je lahko prepoznati, niso izpeljani iz programa in se jih lahko ima za neodvisna in loèena dela sama po sebi, potem ta licenca in njeni pogoji ne veljajo zanje, kadar jih razširjate loèeno. Vendar, kadar te iste kose razširjate kot del celote, ki je delo, ki temelji na programu, mora biti razširjanje celote izvedeno pod pogoji te licence, katere dovoljenja za druge licence se razširjajo na vso celoto in torej na vsak njen del, ne glede na to, kdo ga je napisal.
+
+    Torej, namen tega razdelka ni, da bi zanikal ali spodbijal vaše pravice do dela, ki ste ga v celoti napisali sami; namesto tega je namen razširiti pravico do nadzora razširjanja na izpeljana ali zbrana dela, ki temeljijo na programu.
+
+    Poleg tega, èe gre za zgolj kopièenje drugega dela, ki ne temelji na programu, s programom (ali z delom, ki temelji na programu) na mediju za shranjevanje ali distribucijskem mediju, se licenca na to drugo delo ne nanaša.
+
+3.
+    Program (ali delo, ki temelji na njem, pod razdelkom 2) lahko razmnožujete in razširjate v objektni kodi ali izvedljivi obliki pod pogoji zgornjih razdelkov 1 in 2, èe izpolnite tudi kaj od tega:
+
+    a.
+        Opremite ga s popolno in ustrezno izvorno kodo v strojno berljivi obliki, ki mora biti razširjana pod pogoji zgornjih razdelkov 1 in 2 na mediju, ki se navadno uporablja za izmenjavo programja; ali,
+
+    b.
+        Opremite ga z napisano ponudbo, veljavno vsaj tri leta, da boste katerikoli tretji osebi, za plaèilo, ki ne bo presegalo vaših stroškov fiziènega izvajanja izvorne distribucije, dali popoln izvod ustrezne izvorne kode v strojno berljivi obliki, ki bo razširjana pod pogoji zgornjih razdelkov 1 in 2 na mediju, ki se obièajno uporablja za izmenjavo programja; ali,
+
+    c.
+        Opremite ga z informacijo, ki ste jo dobili vi, kot ponudbo distribucije ustrezne izvorne kode. (Ta alternativa je dovoljena le za nekomercialne distribucije in le, èe ste dobili program v obliki izvorne kode ali izvedljivi obliki s takšno ponudbo, glede na podrazdelek b, zgoraj.) 
+
+    Izvorna koda pri delih pomeni obliko dela, najprimernejšo za izdelavo sprememb. Pri izvedljivem delu pomeni izvorna koda vso izvorno kodo za vse module, ki jih vsebuje, poleg tega pa še morebitne datoteke z definicijami vmesnika, povezane s tem delom in skripte, uporabljane za nadzor prevajanja in namestitev izvedljive datoteke. Vendar - kot posebna izjema - ni nujno, da razširjana izvorna koda vkljuèuje vse, kar se navadno razširja (v izvorni ali binarni obliki) z veèjimi komponentami (prevajalnik, jedro, in tako naprej) operacijskega sistema, na katerem teèe izvedljiva datoteka, razen èe ta komponenta spremlja izvedljivo datoteko.
+
+    Èe se razširjanje izvedljive datoteke ali objektne kode izvede s ponujenim dostopom za prepisovanje z za to namenjenega mesta, potem ponujanje ekvivalentnega dostopa za razmnoževanje izvorne kode z istega mesta šteje kot razširjanje izvorne kode, èeprav tretje osebe niso prisiljene razmnoževati izvorne kode poleg objektne kode. 
+4.
+    Ne smete razmnoževati, spreminjati, podlicencirati ali razširjati programa drugaèe, kot to izrecno doloèa prièujoèa licenca. Vsak poskus siceršnjega kopiranja, spreminjanja, podlicenciranja ali razširjanja programa je nièen in bo samodejno prekinil vaše pravice pod to licenco. Vendar pa se osebam, ki so svoj izvod ali pravice dobile od vas pod to licenco, licenca ne prekine, dokler se ji popolnoma podrejajo.
+
+5.
+    Ni vam treba sprejeti te licence, saj je niste podpisali. Vendar vam razen nje niè ne dovoljuje spreminjanja ali razširjanja programa ali iz njega izpeljanih del. Èe ne sprejmete te licence, ta dejanja prepoveduje zakon. Torej, s spremembo ali razširjanjem programa (ali kateregakoli dela, ki temelji na programu), pokažete svoje strinjanje s to licenco in z vsemi njenimi doloèitvami in pogoji za razmnoževanje, razširjanje ali spreminjanje programa ali del, ki temeljijo na njem.
+
+6.
+    Vsakiè, ko razširjate program (ali katerokoli delo, ki temelji na programu), prejemnik samodejno prejme licenco od izvornega izdajatelja licence (angl. original licensor) za razmnoževanje, razširjanje ali spreminjanje programa glede na ta doloèila in pogoje. Ne smete vsiljevati nobenih nadaljnjih omejitev izvajanja prejemnikovih pravic, podeljenih tukaj. Niste odgovorni za vsiljevanje strinjanja tretjih oseb s to licenco.
+
+7.
+    Èe so vam, kot posledica presoje sodišèa ali suma kršitve patenta ali zaradi kateregakoli drugega razloga (ne omejenega zgolj na patentna vprašanja), vsiljeni pogoji (bodisi z odlokom sodišèa, sporazumom ali drugaèe), ki nasprotujejo pogojem te licence, vas ne odvezujejo pogojev te licence. Èe programa ne morete razširjati tako, da hkrati zadostite svojim obvezam pod to licenco in katerimkoli drugim obstojeèim obvezam, potem posledièno sploh ne smete razširjati programa. Na primer, èe patentna licenca ne dovoli razširjanja programa brez plaèevanja avtorskega honorarja vseh, ki prejmejo kopije neposredno ali posredno od vas, potem je edina možna pot, da zadostite temu pogoju in tej licenci ta, da se v celoti vzdržite razširjanja programa.
+
+    Èe se za katerikoli del tega razdelka ugotovi, da je neveljaven ali da se ga ne da izvajati pod kateremkoli doloèenim pogojem, je mišljeno, da velja usmeritev tega razdelka (angl. balance of the section) in razdelek kot celota velja v drugih primerih.
+
+    Namen tega razdelka ni, da bi vas napeljeval h kršitvi patentov ali drugih trditev lastništva pravic ali izpodbijal veljavnost katerihkoli takšnih trditev; edini namen tega razdelka je šèitenje integritete sistema distribucije prostega programja, ki je izveden s prakso javnih licenc. Mnogi ljudje so radodarno prispevali k širokemu naboru programja, razširjanega skozi ta sistem, v upanju na njegovo dosledno izvajanje; od avtorja/dajalca je odvisno, èe je pripravljen razširjati programje skozi katerikoli drug sistem, in izdajatelj licence ne more vsiljevati te izbire.
+
+    Ta razdelek namerava temeljito pojasniti, kaj so predvidene posledice nadaljevanja licence.
+
+8.
+    Èe sta razširjanje in/ali uporaba programa omejena v doloèenih državah, bodisi zaradi patentov ali vmesnikov s posebno pravico razširjanja (angl. copyrighted interfaces), lahko izvorni lastnik ali lastnica pravic razširjanja, ki postavlja program pod to licenco, doda eksplicitno zemljepisno omejitev razširjanja, ki izkljuèuje te države, tako da je razširjanje dovoljeno le v in med državami, ki niso na tak naèin izkljuèene. V takem primeru ta licenca vkljuèuje omejitve, kot da so napisane v telesu te licence.
+
+9.
+    Ustanova Free Software Foundation lahko od èasa do èasa izdaja preurejene in/ali nove razlièice Splošne javne licence (angl. General Public License). Nove razlièice bodo pisane v duhu trenutne razlièice, vendar se lahko razlikujejo v podrobnostih, ki bodo obdelovale nove težave ali poglede.
+
+    Vsaki razlièici je prirejena razloèevalna številka razlièice. Èe program doloèa številko razlièice te licence, ki se nanaša na njo in ,,na katerekoli poznejše razlièice``, imate izbiro upoštevanja pogojev in doloèil bodisi te razlièice ali katerekoli poznejše razlièice, ki jo je izdala ustanova Free Software Foundation. Èe program ne doloèa številke razlièice te licence, lahko izberete katerokoli razlièico, ki jo je kdajkoli izdala ustanova Free Software Foundation.
+
+10.
+    Èe želite vkljuèiti dele programa v druge proste programe, katerih pogoji razširjanja so drugaèni, pišite avtorju in ga prosite za dovoljenje. Za programje, katerega pravice razširjanja ima Free Software Foundation, pišite na Free Software Foundation; vèasih naredimo izjemo pri tem. Našo odloèitev bosta vodila dva cilja: ohranitev prostega statusa vseh izvedenih del iz našega prostega programja in spodbujanje razdeljevanja in ponovne uporabe programja na splošno.
+
+
+    BREZ JAMSTVA
+
+11.
+    KER JE PROGRAM LICENCIRAN KOT BREZPLAÈEN, NI NOBENEGA JAMSTVA ZA PROGRAM DO MEJE, KI JO DOLOÈA PRISTOJNI ZAKON. RAZEN, ÈE NI DRUGAÈE NAPISANO, IMETNIKI PRAVIC RAZŠIRJANJA IN/ALI DRUGE OSEBE PONUJAJO PROGRAM ,,TAK, KOT JE``, BREZ ZAGOTOVILA KAKRŠNEKOLI VRSTE, NEPOSREDNEGA ALI POSREDNEGA, KAR VKLJUÈUJE, A NI OMEJENO NA POSREDNA JAMSTVA CENOVNE VREDNOSTI IN PRIMERNOSTI ZA DOLOÈENO UPORABO. CELOTNO TVEGANJE GLEDE KAKOVOSTI IN DELOVANJA PROGRAMA PREVZAMETE SAMI. ÈE SE PROGRAM IZKAŽE ZA OKVARJENEGA, SAMI NOSITE STROŠKE VSEH POTREBNIH STORITEV, POPRAVIL ALI POPRAVKOV.
+
+12.
+    V NOBENEM PRIMERU, RAZEN ÈE TAKO PRAVI VELJAVNI ZAKON ALI JE PISNO DOGOVORJENO, NE BO LASTNIK PRAVIC RAZŠIRJANJA ALI KATERAKOLI DRUGA OSEBA, KI LAHKO SPREMENI IN/ALI PONOVNO RAZŠIRJA PROGRAM, KOT JE DOVOLJENO ZGORAJ, PREVZEL ODGOVORNOSTI ZARADI ŠKODE, NAJSI GRE ZA SPLOŠNO, POSEBNO, NENAMERNO ŠKODO ALI ŠKODO, IZHAJAJOÈO IZ UPORABE ALI NEZMOŽNOSTI UPORABE PROGRAMA (VKLJUÈNO Z, A NE OMEJENO NA, IZGUBO PODATKOV ALI NENATANÈNO OBDELAVO PODATKOV ALI IZGUBO, POVZROÈENO VAM ALI TRETJIM OSEBAM ALI NEZMOŽNOST PROGRAMA, DA BI DELOVAL S KAKIM DRUGIM PROGRAMOM), ÈETUDI JE BIL TAK LASTNIK ALI DRUGA OSEBA OBVEŠÈEN O MOŽNOSTI NASTANKA TAKŠNE ŠKODE.
+
+KONEC DOLOÈB IN POGOJEV 
